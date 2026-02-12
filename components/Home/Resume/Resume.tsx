@@ -50,7 +50,6 @@ const Resume = () => {
         </div>
         {/* Experince PART  */}
         <div
-          className="mt-10 "
           data-aos="zoom-out"
           data-aos-anchor-placement="top-center"
           data-aos-delay="300"
