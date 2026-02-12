@@ -24,6 +24,16 @@ const Nav = ({openNav}:Props) => {
      return ()=> window.removeEventListener("scroll" ,handler)
    },[]);
 
+    // Smooth scroll function
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string) => {
+    e.preventDefault()
+    const sectionId = url.replace("#", "") // "#home" → "home"
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <div className={`transition-all ${navBg ? "bg-[#0f142ed9] shadow-md" : "fixed" }
      duration-200 h-[12vh] z-[10000] fixed w-full`}>
@@ -46,6 +56,7 @@ const Nav = ({openNav}:Props) => {
               return (<Link
                key={link.id}
                 href={link.url} 
+                onClick={(e) => handleNavClick(e, link.url)}
                 className='text-base 
               hover:text-cyan-300 text-white font-bold 
               transition-all duration-200 '>
@@ -57,12 +68,15 @@ const Nav = ({openNav}:Props) => {
         {/* BUTTON  */}
         <div className="flex items-center space-x-4">
             {/* button CV  */}
-            <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg
+            <a 
+            href='/Rahul_Yadav.pdf'
+            download="Rahul_Yadav_Resume.pdf"
+             className='px-8 py-3.5 text-sm cursor-pointer rounded-lg
              bg-blue-800 hover:bg-blue-900 transition-all duration-300 
              space-x-2 flex items-center text-white:'>
              <BiDownload className='w-5 h-5'/>
              <span>Download CV</span>
-            </button>
+            </a>
             {/* Burger menu  */}
             <HiBars3BottomRight
             onClick={openNav}
