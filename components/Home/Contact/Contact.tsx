@@ -19,71 +19,88 @@ const Contact = () => {
           </p>
           <div className="mt-7">
             <div className="flex items-center space-x-3 mb-4">
-                <BiPhone className="w-9 h-9 text-cyan-300"/>
-                <p className="text:xl font-bold text-gray-400">
-                    9264927561
-                </p>
+              <BiPhone className="w-9 h-9 text-cyan-300" />
+              <p className="text:xl font-bold text-gray-400">9264927561</p>
             </div>
             <div className="flex items-center space-x-3 mb-4">
-                <BiEnvelope className="w-9 h-9 text-cyan-300"/>
-                <p className="text:xl font-bold text-gray-400">
-                    rahulrao14320@gmail.com
-                </p>
+              <BiEnvelope className="w-9 h-9 text-cyan-300" />
+              <p className="text:xl font-bold text-gray-400">
+                rahulrao14320@gmail.com
+              </p>
             </div>
             <div className="flex items-center space-x-3 mb-4">
-                <BiMap className="w-9 h-9 text-cyan-300"/>
-                <p className="text:xl font-bold text-gray-400">
-                    Noida ,Sector 62 ,Uttar Pradesh
-                </p>
+              <BiMap className="w-9 h-9 text-cyan-300" />
+              <p className="text:xl font-bold text-gray-400">
+                Noida ,Sector 62 ,Uttar Pradesh
+              </p>
             </div>
           </div>
           {/* SOCIAL ICON  */}
           <div className="flex items-center mt-8 space-x-3">
-            <div className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
-            cursor-pointer flex-col hover:bg-blue-800   transition-all duration-300">
-                <FaFacebookF className="text-white w-6 h-6"/>
+            <div
+              className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
+            cursor-pointer flex-col hover:bg-blue-800   transition-all duration-300"
+            >
+              <FaFacebookF className="text-white w-6 h-6" />
             </div>
-            <div className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
-            cursor-pointer flex-col hover:bg-red-600   transition-all duration-300">
-                <FaYoutube className="text-white w-6 h-6"/>
+            <div
+              className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
+            cursor-pointer flex-col hover:bg-red-600   transition-all duration-300"
+            >
+              <FaYoutube className="text-white w-6 h-6" />
             </div>
-            <div className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
-            cursor-pointer flex-col hover:bg-sky-400   transition-all duration-300">
-                <FaTwitter className="text-white w-6 h-6"/>
+            <div
+              className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
+            cursor-pointer flex-col hover:bg-sky-400   transition-all duration-300"
+            >
+              <FaTwitter className="text-white w-6 h-6" />
             </div>
-            <div className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
-            cursor-pointer flex-col hover:bg-pink-500   transition-all duration-300">
-                <FaInstagram className="text-white w-6 h-6"/>
+            <div
+              className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
+            cursor-pointer flex-col hover:bg-pink-500   transition-all duration-300"
+            >
+              <FaInstagram className="text-white w-6 h-6" />
             </div>
           </div>
         </div>
 
         {/* form  */}
-        <div className="px-4 py-3.5 bg-[#131332] rounded-lg">
-            <input 
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="0"
+          className="px-4 py-3.5 bg-[#131332] rounded-lg"
+        >
+          <input
             type="text"
             placeholder="Name"
             className="px-4 mt-6 py-3.5 bg-[#363659] text-white outline-none rounded-md w-full
-          placeholder:text-white/70  "/>
-            <input 
+          placeholder:text-white/70  "
+          />
+          <input
             type="email"
             placeholder="Email Address"
             className="px-4 py-3.5 mt-6  bg-[#363659] text-white outline-none rounded-md w-full
-          placeholder:text-white/70  "/>
-            <input 
+          placeholder:text-white/70  "
+          />
+          <input
             type="text"
             placeholder="Mobile Number"
             className="px-4 py-3.5 mt-6  bg-[#363659] text-white outline-none rounded-md w-full
-          placeholder:text-white/70  "/>
-
+          placeholder:text-white/70  "
+          />
           <textarea
-           placeholder="Your Messege"
+            placeholder="Your Messege"
             className="px-4 py-3.5 mt-6  bg-[#363659] text-white outline-none rounded-md w-full
-          placeholder:text-white/70 h-[10rem]  " />
-
-          <button className="mt-8 px-12  py-4 bg-blue-900 hover:bg-blue-950
-          transition-all duration-300 cursor-pointer text-white rounded-full">Send Message</button>
-\
+          placeholder:text-white/70 h-[10rem]  "
+          />
+          <button
+            className="mt-8 px-12  py-4 bg-blue-900 hover:bg-blue-950
+          transition-all duration-300 cursor-pointer text-white rounded-full"
+          >
+            Send Message
+          </button>
+          \
         </div>
       </div>
     </div>
