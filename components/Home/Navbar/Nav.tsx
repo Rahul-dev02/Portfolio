@@ -73,7 +73,7 @@ const Nav = ({openNav}:Props) => {
             download="Rahul_Yadav_Resume.pdf"
              className='px-8 py-3.5 text-sm cursor-pointer rounded-lg
              bg-blue-800 hover:bg-blue-900 transition-all duration-300 
-             space-x-2 flex items-center text-white:'>
+             space-x-2 flex items-center text-white'>
              <BiDownload className='w-5 h-5'/>
              <span>Download CV</span>
             </a>
