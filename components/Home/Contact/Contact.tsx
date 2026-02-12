@@ -1,7 +1,7 @@
 import React from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import { FaTwitch } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaTwitch } from "react-icons/fa6";
 
 const Contact = () => {
   return (
@@ -37,18 +37,26 @@ const Contact = () => {
           </div>
           {/* SOCIAL ICON  */}
           <div className="flex items-center mt-8 space-x-3">
-            <div
-              className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
-            cursor-pointer flex-col hover:bg-blue-800   transition-all duration-300"
-            >
-              <FaFacebookF className="text-white w-6 h-6" />
-            </div>
-            <div
-              className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
-            cursor-pointer flex-col hover:bg-red-600   transition-all duration-300"
-            >
-              <FaYoutube className="text-white w-6 h-6" />
-            </div>
+
+
+           <a href="https://www.linkedin.com/in/rahul-yadav-aa3918300/"
+              target="_blank"
+              rel="noopener noreferrer">
+
+             <div className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
+            cursor-pointer flex-col hover:bg-blue-800   transition-all duration-300" >
+              <FaLinkedin className="text-white w-6 h-6" /> </div>
+           </a>
+           
+           <a href="https://github.com/Rahul-dev02"
+              target="_blank"
+              rel="noopener noreferrer">
+            <div className="h-14 w-14 bg-blue-900/40  rounded-full flex items-center justify-center
+            cursor-pointer flex-col hover:bg-black   transition-all duration-300" > 
+                 <FaGithub className="text-white w-6 h-6" /> </div>
+            </a>
+
+
             <div
               className="h-14 w-14 bg-blue-950/60  rounded-full flex items-center justify-center
             cursor-pointer flex-col hover:bg-sky-400   transition-all duration-300"
