@@ -17,8 +17,8 @@ const Hero = () => {
           alt="hero"
           width={190}
           height={190}
-          className="rounded-full border-8 border-[#0c0c48aa]  object-cover object-top"
-          // className="rounded-full border-4 border-cyan-400   object-cover object-top"
+          // className="rounded-full border-8 border-[#0c0c48aa]  object-cover object-top"
+          className="rounded-full border-4 border-cyan-400   object-cover object-top"
           style={{ width: "190px", height: "190px" }}
           data-aos="fade-up"
         />
