@@ -31,6 +31,11 @@ export const NavLinks=[
     // },
     {
         id:7,
+        url:"#blog",
+        Label:"Blog"
+    },
+    {
+        id:8,
         url:"#contact",
         Label:"Contact"
     },
