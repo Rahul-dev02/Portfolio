@@ -48,9 +48,9 @@ const Home = () => {
      <section id="skills">
      <Skills/>
      </section>
-     <section id="testimonials">
+     {/* <section id="testimonials">
      <ClientReview/>
-     </section>
+     </section> */}
      <section id="blog">
       <Blog/>
      </section>
